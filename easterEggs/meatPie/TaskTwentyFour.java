@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class TaskTwentyFour{
                 public static void main(String[] args){
-                        
                         Scanner input = new Scanner(System.in);
 
                         System.out.print("enter your first number:");
