@@ -9,7 +9,7 @@ public class NokiaPhone {
         
         // phoneBook menu options
         String phoneBook = "Phone book\n1.Search\n2.Service Nos\n3.Add name\n4.Erase\n5.Edit\n6.Assign tone\n7.Send b'card\n8.Options\n9.Speed dials\n10.Voice tags\n";
-        String phoneSubMenu = "\n1.Type of view\n2.Memory status\n0. to return";
+        String phoneSubMenu = "Phone book\n1.Search\n2.Services Nos\n3.Add name\n4.Erase\n5.Edit\n6.Assign tone\n7.Send b'card\n8.Options\n9.Speed dials\n10.Voice tags\n";
         
         // phone options subMenumenu
         String options = "Options\n1.Type of view\n2.Memory status\n";
@@ -57,22 +57,10 @@ public class NokiaPhone {
         switch(userInput){
             case 1->{
                 System.out.println(phoneBook);
-                userInput = scanner.nextInt();
-                if(userInput==8){
-                    System.out.println(phoneSubMenu);
-                }
-                System.out.println("select an option\n0 to return\n");
-                userInput = scanner.nextInt();
-                if(userInput==0){
-                    System.out.println(phoneBook);
-                }
-                System.out.println("0 to return to main menu\n");
-                userInput = scanner.nextInt();
-                if(userInput==0){
-                    System.out.println(mainMenu);
-                }
-                
-                
+                // int input = scanner.nextInt();
+                // if(userInput==1){
+                //     System.out.println(phoneSubMenu);
+                // }
             }
             case 2->System.out.println(messages);
             case 3->System.out.println(chat);
