@@ -20,10 +20,10 @@ public class NokiaPhone {
         11.Clock
         12.Profiles
         13.SIM services
+         0.Exit
         
         select your option
         """;
-        System.out.print(mainMenu);
         
         // phoneBook menu options
         String phoneMenu =
@@ -213,13 +213,18 @@ public class NokiaPhone {
         1.SIM services
         """;
 
-        
+
+        while(true){
+//      print mainMenu first before collecting first input
+        System.out.print(mainMenu);
         int userInput = scanner.nextInt();
         
         switch(userInput){
-            case 1->{
+            // when user enters 1, print phone menu
+            case 1:{
                 System.out.println(phoneMenu);
                 userInput = scanner.nextInt();
+                if(userInput != 8) break;
                 if(userInput==8){
                     System.out.println(phoneSubMenu);
                 }
@@ -231,33 +236,43 @@ public class NokiaPhone {
                 if(userInput==0){
                     System.out.println(mainMenu);
                 }
-                
-                
-            }
+            } break;
+            
+            
             // messages menu options deep-linking logic
-            case 2->{
+            case 2:{
                 System.out.println(messages);
                 userInput = scanner.nextInt();
                 if(userInput==7){
                     System.out.println(mSubMenu);
                 }
-            }
-            case 3->System.out.println(chat);
-            case 4->System.out.println(callRegister);
-            case 5->System.out.println(tones);
-            case 6->System.out.println(settings);
-            case 7->System.out.println(callDivert);
-            case 8->System.out.println(games);
-            case 9->System.out.println(calculator);
-            case 10->System.out.println(reminders);
-            case 11->System.out.println(clock);
-            case 12->System.out.println(profiles);
-            case 0->System.out.println(mainMenu);
-            default -> System.out.println("invalid entry");
+            }break;
+            case 3:System.out.println(chat);
+            break;
+            case 4:System.out.println(callRegister);
+            break;
+            case 5:System.out.println(tones);
+            break;
+            case 6:System.out.println(settings);
+            break;
+            case 7:System.out.println(callDivert);
+            break;
+            case 8:System.out.println(games);
+            break;
+            case 9:System.out.println(calculator);
+            break;
+            case 10:System.out.println(reminders);
+            break;
+            case 11:System.out.println(clock);
+            break;
+            case 12:System.out.println(profiles);
+            break;
+            case 0:System.out.println("shutting bown phone...");
+            return;
+            default: System.out.println("invalid entry");
         }
+    }
     }
     
 }
-
-
 
