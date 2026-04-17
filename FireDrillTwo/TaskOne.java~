@@ -1,8 +1,0 @@
-import java.util.Scanner;
-public class TaskOne{
-    public static void main (String[] args);
-    
-    Scanner inputCollector = new Scanner(System.in);
-    
-    collect user input 10 times
-}

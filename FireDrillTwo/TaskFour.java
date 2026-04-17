@@ -1,14 +1,20 @@
+// collect 10 scores and print sum of the even indexes(2nd number, 4th number, 10th number)
 import java.util.Scanner;
 public class TaskFour{
-    public static void main (String[] args){
-            Scanner inputCollector = new Scanner(System.in);
-        
-        // collect user input 10 times
-        for(int count =1;count <= 10; count++){   
-            System.out.print("Enter number " + count + ": ");
-            int userNum = inputCollector.nextInt();
+    public static void main(String[] args){
+        int totalNum = 0;
+        int sumOfEvenNum = 0;
+        Scanner inputCollector = new Scanner(System.in);
+        int count=1;
+        while(count <= 10){
+            System.out.print("Enter number:" + count + " ");
+            int userVal = inputCollector.nextInt();
+            count++;
             
-            System.out.print(userNum);
-        }   
+            if(userVal %2 == 0){
+                sumOfEvenNum+=userVal;
+            }
+        }
+        System.out.println(sumOfEvenNum);
     }
 }

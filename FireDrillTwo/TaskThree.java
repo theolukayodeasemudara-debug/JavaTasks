@@ -1,14 +1,19 @@
+// collect 10 scores and print sum and average
 import java.util.Scanner;
 public class TaskThree{
-    public static void main (String[] args){
-            Scanner inputCollector = new Scanner(System.in);
-        
-        // collect user input 10 times
-        for(int count =1;count <= 10; count++){   
-            System.out.print("Enter number " + count + ": ");
-            int userNum = inputCollector.nextInt();
+    public static void main(String[] args){
+        int totalNum = 0;
+        double average = 0;
+        Scanner inputCollector = new Scanner(System.in);
+        int count=1;
+        while(count <= 10){
+            System.out.print("Enter number:" + count + " ");
+            int userVal = inputCollector.nextInt();
+            count++;
             
-            System.out.print(userNum);
-        }   
+            totalNum+=userVal;
+            average = (double)totalNum/10;
+        }
+        System.out.println("Sum: " + totalNum + " Average: " + average);
     }
 }

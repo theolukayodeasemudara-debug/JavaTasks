@@ -1,18 +1,16 @@
 import java.util.Scanner;
 public class TaskOne{
-    public static void main (String[] args){
+    public static void main(String[] args){
+        int totalNum = 0;
         Scanner inputCollector = new Scanner(System.in);
-        int total = 0;
-        
-        // collect user input 10 times
-        int count;
-        for(count =1;count <= 10; count++){   
-            System.out.print("Enter number " + count + ": ");
-            int userNum = inputCollector.nextInt();
+        int count=1;
+        while(count <= 10){
+            System.out.print("Enter number:" + count + " ");
+            int userVal = inputCollector.nextInt();
+            count++;
             
-            // sum of input collected
-            total +=userNum;
-            System.out.print(total);
-        }   
+            totalNum+=userVal;
+        }
+        System.out.println(totalNum);
     }
 }
