@@ -7,7 +7,7 @@ public class LeapYearCalc{
                 System.out.print(count + " ");
                 if(count % 7 == 0){
                     System.out.println();
-            }
+                }
             }
             count++;
         

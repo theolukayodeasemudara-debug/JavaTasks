@@ -18,8 +18,8 @@ public class LoopBackward{
         for(;count >= 0;){
             System.out.println(count);
             count--;
-        }
             System.out.println("Blast off!");
+        }
     }
 }
 
