@@ -1,0 +1,25 @@
+// write a program that simulates a countdown from userInput to 1, then prints: Blast off!
+
+// pseudo
+// 1.collect userInput using Scanner
+// 2.use a for-loop to loop over userInput
+// 3.Intialize userInput as the counter variable
+
+import java.util.Scanner;
+public class LoopBackward{
+    public static void main(String[] args){
+        Scanner inputCollector = new Scanner(System.in);
+        
+        
+        System.out.println("Enter a number!");
+        int number = inputCollector.nextInt();
+        
+        int count = number;
+        for(;count >= 0;){
+            System.out.println(count);
+            count--;
+            // System.out.println("Blast off!");
+        }
+    }
+}
+
