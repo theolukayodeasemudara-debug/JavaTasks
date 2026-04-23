@@ -7,7 +7,7 @@ public class IntegerSquare{
         int intSquare = inputCollector.nextInt();
 
         for (;intSquare != 0;) {
-            int digit = intSquare % 10;     // 1. grab last digit
+            int digit = intSquare % 10;     // 1. extract last digit
             int square = digit * digit;     // 2. square it
             System.out.print(square + " "); // 3. print the square
             intSquare = intSquare / 10;     // 4. remove last digit

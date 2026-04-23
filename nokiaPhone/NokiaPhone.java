@@ -224,7 +224,7 @@ public class NokiaPhone {
             case 1:{
                 System.out.println(phoneMenu);
                 userInput = scanner.nextInt();
-                if(userInput != 8) break;
+                if(userInput != 8) continue;
                 if(userInput==8){
                     System.out.println(phoneSubMenu);
                 }

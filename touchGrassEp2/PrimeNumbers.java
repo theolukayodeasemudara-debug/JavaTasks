@@ -14,11 +14,26 @@ public class PrimeNumbers{
         System.out.println("Enter a number!");
         int number = inputCollector.nextInt();
         
-
-        // a number divisible by 1 and itself
-        if(number % number == 0 && number % 2 == 0){
-          System.out.println(number + " is a prime number");
-          } else System.out.println("Number is not a prime number");
+        if(number < 0){
+            System.out.println(number + " is not a prime square.");
+        }
+        
+        boolean isPrimeNumber = true;
+        
+        int prime = 2;
+        for(;prime <= number / 2; prime++){
+            if(prime % 2 == 0){
+                isPrimeNumber = false;
+                break;
+            }
+        }
+        
+        if (isPrimeNumber) {
+            System.out.println(number + " is a prime number");
+        } else {
+            System.out.println(number + " is not a prime number");
+        }
+        
         }
     }
 
