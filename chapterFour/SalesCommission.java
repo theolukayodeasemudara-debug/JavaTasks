@@ -1,0 +1,44 @@
+// Initialize totalSales = 0
+
+// Loop:
+//     Input item number (-1 to stop)
+
+//     If item == 1 → add 239.99
+//     If item == 2 → add 129.75
+//     If item == 3 → add 99.95
+//     If item == 4 → add 350.89
+
+// Compute salary:
+// salary = 200 + 0.09 * totalSales
+
+// Display salary
+
+import java.util.Scanner;
+
+public class SalesCommission {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double totalSales = 0;
+        int item;
+
+        System.out.print("Enter item number (1-4, -1 to end): ");
+        item = input.nextInt();
+
+        while (item != -1) {
+            switch (item) {
+                case 1: totalSales += 239.99; break;
+                case 2: totalSales += 129.75; break;
+                case 3: totalSales += 99.95; break;
+                case 4: totalSales += 350.89; break;
+                default: System.out.println("Invalid item");
+            }
+
+            System.out.print("Enter item number (1-4, -1 to end): ");
+            item = input.nextInt();
+        }
+
+        double salary = 200 + (0.09 * totalSales);
+        System.out.printf("Total earnings: %.2f%n", salary);
+    }
+}
