@@ -2,9 +2,7 @@ public class BackToSender {
 
 // function to check riders score logic and calculated value
     public static int ridersWageCalculator(int successfulDeliveries) {
-        java.util.Scanner inputCollector = new java.util.Scanner(System.in);
         int wages = 0;
-        int basePay = 5000;
             
         if (successfulDeliveries < 50) {
             wages = successfulDeliveries * 160 + 5000;
@@ -15,6 +13,8 @@ public class BackToSender {
         } else if (successfulDeliveries >= 70) {
             wages = successfulDeliveries * 500 + 5000;
         }
+        
+        
 
         return wages;
     }

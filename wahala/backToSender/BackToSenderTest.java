@@ -14,7 +14,7 @@ public class BackToSenderTest{
         int actualResult = BackToSender.ridersWageCalculator(sampleInput1);
         
 	    //check
-	    int expectedResult = 80 * 500 + 5000; // 45000
+	    int expectedResult = 45000;
 	    assertEquals(expectedResult, actualResult);
 	    }
 	    
@@ -28,7 +28,7 @@ public class BackToSenderTest{
         int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
         
         //check
-        int expectedResult = 25 * 160 + 5000; // 9000
+        int expectedResult = 9000;
         assertEquals(expectedResult, actualResult);
     }
 	
@@ -38,6 +38,6 @@ public class BackToSenderTest{
 
 
 // javac -cp "junit-platform-console-standalone-1.11.0.jar:out" -d out BackToSenderTest.java BackToSender.java
-// java -cp "junit-platform-console-standalone-1.11.0.jar:out" org.junit.platform.console.Console Launcher --scan-class-path
+// java -cp "junit-platform-console-standalone-1.11.0.jar:out" org.junit.platform.console.Console Launcher --scan-class-path, this is for when they're both in the same directory
 // java -jar junit-platform-console-standalone-1.11.0.jar --class-path out --select-class BackToSenderTest
 
