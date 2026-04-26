@@ -1,0 +1,9 @@
+public class PizzaWahala {
+    
+    public static myScanner(){
+        java.util.Scanner inputCollector = new java.util.Scanner(System.in);
+    }
+    
+    public collect
+    
+}
