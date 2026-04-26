@@ -5,7 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BackToSenderTest{
     
 	@Test
-    public void testThatFunctionCollectsUserInputSample1(){
+	
+    public void testWageCalculatorFor80Deliveries(){
         // Given
         int sampleInput1 = 80;
         
@@ -18,20 +19,20 @@ public class BackToSenderTest{
 	    }
 	    
 	    
-	@Test
-    public void testThatFunctionCollectsUserInputSample2(){
+	    @Test
+    public void testWageCalculatorFor25liveries(){
         // Given
         int sampleInput2 = 25;
         
         // When
         int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
         
-	    //check
-	    int expectedResult = 25 * 500 + 5000; // 9000
-	    assertEquals(expectedResult, actualResult);
-	    }
+        //check
+        int expectedResult = 25 * 160 + 5000; // 9000
+        assertEquals(expectedResult, actualResult);
+    }
 	
-}
+} 
 
 
 

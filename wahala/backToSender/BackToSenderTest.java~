@@ -24,15 +24,14 @@ public class BackToSenderTest{
         int sampleInput2 = 25;
         
         // When
-        int actualResult = BackToSender.ridersWageCalculator(sampleInput1);
+        int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
         
 	    //check
-	    int expectedResult = 25 * 500 + 5000; // 9000
-	    println(expectedResult);
+	    int expectedResult = 25 * 1605000; // 9000
 	    assertEquals(expectedResult, actualResult);
 	    }
 	
-}
+} 
 
 
 
