@@ -1,0 +1,19 @@
+// write a program that collects 10 inputs and stores it in an array
+public class KataKata{
+    public static void main(String[] args){
+            
+        int []array = new int [10];
+        
+        for(int count = 0; count < 10; count++){
+            java.util.Scanner inputCollector = new java.util.Scanner(System.in);
+            System.out.println("Enter a number");
+            int userInput = inputCollector.nextInt();
+            
+            array[count] = userInput;
+        }
+        
+        for(int print = 0; print < array.length; print++){
+            System.out.print(array[print] + " ");
+        }
+    }
+}

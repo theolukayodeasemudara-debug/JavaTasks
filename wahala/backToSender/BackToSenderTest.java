@@ -20,9 +20,37 @@ public class BackToSenderTest{
 	    
 	    
 	    @Test
-    public void testWageCalculatorFor25liveries(){
+    public void testWageCalculatorFor25Deliveries(){
         // Given
         int sampleInput2 = 25;
+        
+        // When
+        int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
+        
+        //check
+        int expectedResult = 9000;
+        assertEquals(expectedResult, actualResult);
+    }
+    
+    
+    	@Test
+    public void testWageCalculatorFor65Deliveries
+        // Given
+        int sampleInput2 = 65;
+        
+        // When
+        int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
+        
+        //check
+        int expectedResult = 9000;
+        assertEquals(expectedResult, actualResult);
+    }
+    
+    
+        @Test
+    public void testWageCalculatorFor50-59eries
+        // Given
+        int sampleInput2 = 65;
         
         // When
         int actualResult = BackToSender.ridersWageCalculator(sampleInput2);
