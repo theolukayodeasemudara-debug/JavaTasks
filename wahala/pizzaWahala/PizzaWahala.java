@@ -7,8 +7,17 @@ public class PizzaWahala {
         return boxesNumber;
     }
     
+    public static int pizzaType(){
+        java.util.Scanner inputCollector = new java.util.Scanner(System.in);
+        // System.out.println("Select your preferred type");
+        int pizzaOption = inputCollector.nextInt();
+        return pizzaOption;
+    }
     
-    public static String pizzaMenu(){
+    
+    
+    public static void main(String[] args) {
+        
         String pizzaType = """
         Select from our menu options
         
@@ -18,13 +27,10 @@ public class PizzaWahala {
         4.Odogwu
         """;
         
+        int pizza = pizzaType();
+        
         System.out.println(pizzaType);
         
-        return pizzaType;
-    }
-    
-    public static void main(String[] args) {
-        String menu = pizzaMenu();
         int boxes = numberOfBoxes();
         System.out.printf("You ordered: %d boxes \n",boxes);
     }
