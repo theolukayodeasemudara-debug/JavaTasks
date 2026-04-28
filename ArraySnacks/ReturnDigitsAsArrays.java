@@ -1,0 +1,18 @@
+public class ReturnDigitsAsArrays{
+    public static void main(String[] args){
+            
+        int []array = new int [10];
+        
+        for(int count = 0; count < 10; count++){
+            java.util.Scanner inputCollector = new  java.util.Scanner(System.in);
+            System.out.println("Enter a number");
+            int userInput = inputCollector.nextInt();
+            
+            array[count] = userInput;
+        }
+        
+        for(int row = 0; row < array.length; row++){
+            System.out.print(array[row] + " ");
+        }
+    }
+}
