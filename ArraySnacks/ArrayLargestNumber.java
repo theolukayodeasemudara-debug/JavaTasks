@@ -3,9 +3,9 @@ public class ArrayLargestNumber{
        int []numbers = {98,100,83,50,93};
 
         int largestNumber = numbers[0];
-        for(int count = 0; count < numbers.length; count++){
-            if(numbers[count] > largestNumber){
-                largestNumber = numbers[count];
+        for(int index = 0; index < numbers.length; index++){
+            if(numbers[index] > largestNumber){
+                largestNumber = numbers[index];
                 System.out.println(largestNumber + " is the largest number");
             }
         } 
