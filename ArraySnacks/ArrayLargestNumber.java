@@ -1,4 +1,10 @@
 public class ArrayLargestNumber{
+
+    public class FuncArray(){
+        
+    }
+    
+    
     public static void main(String[] args){
        int []numbers = {98,100,83,50,93};
 
