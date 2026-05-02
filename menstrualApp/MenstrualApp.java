@@ -14,8 +14,8 @@ public class MenstrualApp{
         return nextCycleDate -14;
     }
     
-    public static int calculateSafeDays(int date) {
-        return 0;
+    public static int calculateSafeDays(int ovulationDate) {
+        return ovulationDate - 6;
     }
     
     public static void main(String[] args){
