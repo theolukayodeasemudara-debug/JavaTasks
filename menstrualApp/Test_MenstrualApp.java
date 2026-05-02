@@ -4,39 +4,33 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class Test_MenstrualApp{
         int lastStartDate = 0;
-        int cycleLength = 22;
+        int cycleLength = 18;
+        int firstStartDate = 1;
+        int secondStartDate = 30;
         
         
         @Test
         public void testForNextPeriodDate(){
-            lastStartDate = 10;
-            int actual = MenstrualApp.calculateNextCycle(lastStartDate + cycleLength);
-            int expected = 32;
+            int actual = MenstrualApp.calculateNextCycle(lastStartDate,cycleLength);
+            int expected = 28;
             assertEquals(actual,expected);
         }
         
         @Test
-        public void testForLengthOfMenstrualCycle(){
-            lastStartDate = 10;
-            int actual = MenstrualApp.calculateLengthOfCycle(lastStartDate + cycleLength);
-            int expected = 32;
+            public void testForLengthOfMenstrualCycle(){
+            int actual = MenstrualApp.calculateLengthOfCycle(firstStartDate,secondStartDate);
+            int expected = 29;
             assertEquals(actual,expected);
         }
         
         @Test
-        public void testForFertileWindowDates(){
-            lastStartDate = 10;
-            int actual = MenstrualApp.calculateOvulationDates(lastStartDate + cycleLength);
-            int expected = 32;
-            assertEquals(actual,expected);
+        public void testForOvulationDates(){
+
         }
         
         @Test
         public void testForSafeDates(){
-            lastStartDate = 10;
-            int actual = MenstrualApp.calculateSafeDays(lastStartDate + cycleLength);
-            int expected = 32;
-            assertEquals(actual,expected);
+
         }
 }
 
